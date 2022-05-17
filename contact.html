@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Pretty Petals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=DM+Serif+Display:ital@0;1&family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <script src="jquiery.3.4.1.js"></script>
+    <script>
+        function popupBox(){
+            alert("Success! Your Message has been sent.");
+        }
+    </script>
+
+</head>
+<body class="wrapper">
+    <section class="bg-green">
+    <header class="text-left"><h1>Pretty Petals</h1>
+        <p class="subtitle">San Diego</p>
+       
+        </header> 
+        <nav> 
+             <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+   
+
+    <section class="bg-dark">
+        <div class="container">
+            <div class="container-form">
+                <div class="title"><h2>Contact Us</h2></div>
+                <form action="#">
+                    <div class="user-details">
+
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" placeholder="Enter your first name" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Last Name</span>
+                            <input type="text" placeholder="Enter your last name" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Email</span>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Phone</span>
+                            <input type="text" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="details">Message</span>
+                            <input type="text" placeholder="Enter message" required>
+                        </div>
+                    </div>
+                    <div class="method-details">
+                        <span class="method-title">Prefered Method of Communication</span><br>
+                        
+                        <input type="radio" name="method" id="dot-1">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="method">Email</span>
+                        </label>
+                        <input type="radio" name="method" id="dot-2">
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="method">Call</span>
+                        </label>
+                        <input type="radio" name="method" id="dot-3">
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="method">Text</span>
+                        </label>
+                           
+                        
+                    </div>
+                    <div class=alert-button>
+                        <input type="submit" value="Submit" onclick='popupBox()'>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div>
+            <p>3045 Flower Street</p>
+            <p>San Diego, CA 92117</p>
+            <p>(858)555-5555</p>
+        </div>
+    </section>
+
+    
+    
+</body>
+
+<footer>
+    <p><small><i>Copyright &copy; 2021 Pretty Petalst</i></small><br></p>
+</footer>
+</html>

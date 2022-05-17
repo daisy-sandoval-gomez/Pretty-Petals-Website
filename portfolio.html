@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>Pretty Petals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=DM+Serif+Display:ital@0;1&family=Old+Standard+TT&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="jsjqfinal.css">
+<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+<script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+</head>
+<body class="wrapper">
+    <section class="bg-green">
+    <header class="text-left"><h1>Pretty Petals</h1>
+        <p class="subtitle">San Diego</p>
+       
+        </header> 
+        <nav> 
+             <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+   
+
+    <section class="bg-dark">
+        <div class="container">
+            <div class="split">
+                <div>
+                    <h2>Portfolio</h2>
+                    <section class="background-color">
+        
+                        <!-- This div holds all the photos -->
+                        <div class="gallery" id="gallery">
+                          
+                        </div>
+                      </section>
+                    
+                      <script type="text/javascript">
+                    
+                      //This will hold the data for creating image elements
+                      var imgData = [
+                        {"href": "gallery/portfolio1.jpg", "dataLightbox": "gallery", "dataTitle": "Pink Centerpiece", "imgsrc": "gallery/portfolio1.jpg"},
+                        {"href": "gallery/portfolio2.jpg", "dataLightbox": "gallery", "dataTitle": "Wedding Flower Arch", "imgsrc": "gallery/portfolio2.jpg"},
+                        {"href": "gallery/portfolio3.jpg", "dataLightbox": "gallery", "dataTitle": "Cake Table Flower Arrangements", "imgsrc": "gallery/portfolio3.jpg"},
+                        {"href": "gallery/portfolio4.jpg", "dataLightbox": "gallery", "dataTitle": "Pink Flower Arrangement", "imgsrc": "gallery/portfolio4.jpg"},
+                        {"href": "gallery/portfolio5.jpg", "dataLightbox": "gallery", "dataTitle": "White and Pink Centerpiece", "imgsrc": "gallery/portfolio5.jpg"},
+                        {"href": "gallery/portfolio6.jpg", "dataLightbox": "gallery", "dataTitle": "Colorful Centerpiece", "imgsrc": "gallery/portfolio6.jpg"},
+                        {"href": "gallery/portfolio7.jpg", "dataLightbox": "gallery", "dataTitle": "Peach Flower Arrangement", "imgsrc": "gallery/portfolio7.jpg"},
+                        {"href": "gallery/portfolio8.jpg", "dataLightbox": "gallery", "dataTitle": "Green Centerpiece", "imgsrc": "gallery/portfolio8.jpg"},
+                        {"href": "gallery/portfolio9.jpg", "dataLightbox": "gallery", "dataTitle": "Pink and White Centerpiece", "imgsrc": "gallery/portfolio9.jpg"},
+                        {"href": "gallery/portfolio10.jpg", "dataLightbox": "gallery", "dataTitle": "White Flower Arrangement", "imgsrc": "gallery/portfolio10.jpg"},
+                        {"href": "gallery/portfolio11.jpg", "dataLightbox": "gallery", "dataTitle": "Rustic Green Centerpiece", "imgsrc": "gallery/portfolio11.jpg"},
+                        {"href": "gallery/portfolio12.jpg", "dataLightbox": "gallery", "dataTitle": "Green and Red Centerpiece", "imgsrc": "gallery/portfolio12.jpg"},
+                        {"href": "gallery/portfolio13.jpg", "dataLightbox": "gallery", "dataTitle": "Spring Flower Centerpiece", "imgsrc": "gallery/portfolio13.jpg"},
+                        {"href": "gallery/portfolio14.jpg", "dataLightbox": "gallery", "dataTitle": "White Lily Arrangement", "imgsrc": "gallery/portfolio14.jpg"},
+                        {"href": "gallery/portfolio15.jpg", "dataLightbox": "gallery", "dataTitle": "White Pink Peach Arrangement", "imgsrc": "gallery/portfolio15.jpg"},
+                        {"href": "gallery/portfolio16.jpg", "dataLightbox": "gallery", "dataTitle": "Peach Arrangement", "imgsrc": "gallery/portfolio16.jpg"},
+                        {"href": "gallery/portfolio17.jpg", "dataLightbox": "gallery", "dataTitle": "Purple and White Centerpiece", "imgsrc": "gallery/portfolio17.jpg"},
+                        {"href": "gallery/portfolio18.jpg", "dataLightbox": "gallery", "dataTitle": "Peach and Pink Arrangement", "imgsrc": "gallery/portfolio18.jpg"},
+                        {"href": "gallery/portfolio19.jpg", "dataLightbox": "gallery", "dataTitle": "Pink and Purple Centerpiece", "imgsrc": "gallery/portfolio19.jpg"},
+                        {"href": "gallery/portfolio20.jpg", "dataLightbox": "gallery", "dataTitle": "Orange Roses Centerpiece", "imgsrc": "gallery/portfolio20.jpg"},
+                        {"href": "gallery/portfolio21.jpg", "dataLightbox": "gallery", "dataTitle": "Green Centerpiece", "imgsrc": "gallery/portfolio21.jpg"},
+                        {"href": "gallery/portfolio22.jpg", "dataLightbox": "gallery", "dataTitle": "Pink and Purple Centerpiece", "imgsrc": "gallery/portfolio22.jpg"},
+                        {"href": "gallery/portfolio23.jpg", "dataLightbox": "gallery", "dataTitle": "White Tropical Arrangement", "imgsrc": "gallery/portfolio23.jpg"},
+                        {"href": "gallery/portfolio24.jpg", "dataLightbox": "gallery", "dataTitle": "Shades of Pink Back drop", "imgsrc": "gallery/portfolio24.jpg"},
+                        {"href": "gallery/portfolio25.jpg", "dataLightbox": "gallery", "dataTitle": "Pink Tropical Centerpiecek", "imgsrc": "gallery/portfolio25.jpg"},
+                        {"href": "gallery/portfolio26.jpg", "dataLightbox": "gallery", "dataTitle": "Blue and Green Centerpiece", "imgsrc": "gallery/portfolio26.jpg"},
+                        {"href": "gallery/portfolio27.jpg", "dataLightbox": "gallery", "dataTitle": "Pink and Peach Centerpiece", "imgsrc": "gallery/portfolio27.jpg"},
+                        {"href": "gallery/portfolio28.jpg", "dataLightbox": "gallery", "dataTitle": "Rustic Red and Orange Arrangement", "imgsrc": "gallery/portfolio28.jpg"},
+                        {"href": "gallery/portfolio29.jpg", "dataLightbox": "gallery", "dataTitle": "Spring Flower Arrangement", "imgsrc": "gallery/portfolio29.jpg"},
+                        {"href": "gallery/portfolio30.jpg", "dataLightbox": "gallery", "dataTitle": "Peach Flower Arrangement", "imgsrc": "gallery/portfolio30.jpg"},
+                      ];
+                    
+                      //This function will help create an element dynamically
+                      function createElement(element){
+                        var newElement = document.createElement("a");
+                        var imgElement = document.createElement("img");
+                        newElement.setAttribute("href", element.href);
+                        newElement.setAttribute("data-lightbox", element.dataLightbox);
+                        newElement.setAttribute("data-title", element.dataTitle);
+                        imgElement.setAttribute("src", element.imgsrc);
+                        newElement.innerHTML = imgElement.outerHTML;
+                        return newElement;
+                      }
+                    
+                      //This will hold the element "gallery" for easier reference later
+                      var gallery = document.getElementById("gallery");
+                    
+                      //This will loop through the imgData array and will append it to the HTML document
+                      for(let i = 0; i < imgData.length; i++){
+                            gallery.appendChild(createElement(imgData[i]));
+                      }
+                         </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div>
+            <p>3045 Flower Street</p>
+            <p>San Diego, CA 92117</p>
+            <p>(858)555-5555</p>
+        </div>
+    </section>
+</body>
+
+<footer>
+    <p><small><i>Copyright &copy; 2021 Pretty Petalst</i></small><br></p>
+</footer>
+</html>
